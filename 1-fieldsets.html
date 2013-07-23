@@ -1,0 +1,113 @@
+<html>
+<head>
+<style type="text/css">
+div.label {
+	float: left;
+	width: 300px;
+}
+
+input,p span {
+	display: inline-block;
+	margin-left: 50x;
+}
+</style>
+</head>
+<body>
+
+ <form>
+
+  <h1>Money Transfer</h1>
+
+  <fieldset>
+   <legend>Recipient</legend>
+
+   <p>
+   <div class="label">Name or company*:</div>
+   <input
+    type="text"
+    name="recipientName" />
+   </p>
+
+   <p>
+   <div class="label">Account number*:</div>
+   <input
+    type="text"
+    name="recipientAccount" />
+   </p>
+
+   <p>
+   <div class="label">Bank code*:</div>
+   <input
+    type="text"
+    name="recipientBankCode" />
+   </p>
+
+   <p>
+   <div class="label">Bank name:</div>
+   <span>will be inserted automatically.</span>
+   </p>
+
+  </fieldset>
+
+  <fieldset>
+   <legend>Transfer Details</legend>
+   <p>
+   <div class="label">Amount*:</div>
+   <input
+    type="text"
+    name="amount" />
+   </p>
+
+   <p>
+   <div class="label">Reason:</div>
+   <input
+    type="text"
+    name="reasonLine1" />
+   </p>
+
+   <p>
+   <div class="label">&nbsp;</div>
+   <input
+    type="text"
+    name="reasonLine2" />
+   </p>
+
+   <p>
+   <div class="label">&nbsp;</div>
+   <input
+    type="text"
+    name="reasonLine3" />
+   </p>
+
+   <p>
+   <div class="label">&nbsp;</div>
+   <input
+    type="text"
+    name="reasonLine4" />
+   </p>
+
+  </fieldset>
+
+  <p>
+  <div class="label">Fulfillment:</div>
+  <input
+   type="text"
+   name="fulfillmentDate" />
+  (YYYY.MM.DD) Leave empty if you wish immediate fulfillment
+  </p>
+
+  <p>
+  <div class="label">Transferor Account*:</div>
+  <select name="transferorAccount">
+   <option>Account 4711</option>
+   <option>Account 08/15</option>
+  </select>
+  </p>
+
+  <input
+   type="submit"
+   value="Submit" />
+ </form>
+
+</body>
+</html>

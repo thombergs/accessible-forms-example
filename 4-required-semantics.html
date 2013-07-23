@@ -1,0 +1,142 @@
+<html>
+<head>
+<style type="text/css">
+label {
+	float: left;
+	width: 300px;
+}
+
+input,p span {
+	display: inline-block;
+	margin-left: 50x;
+}
+</style>
+</head>
+<body>
+
+ <form>
+
+  <h1>Money Transfer</h1>
+
+  <fieldset>
+   <legend>Recipient</legend>
+
+   <p>
+    <label for="recipientName">Name or company</label>
+    <input
+     id="recipientName"
+     type="text"
+     name="recipientName"
+     required="true"
+     aria-required="true" />
+   </p>
+
+   <p>
+    <label for="recipientAccount">Account number</label>
+    <input
+     id="recipientAccount"
+     type="text"
+     name="recipientAccount"
+     aria-describedby="accountHint"
+     required="true"
+     aria-required="true" />
+    <span id="accountHint">Please enter digits only.</span>
+   </p>
+
+   <p>
+    <label for="recipientBankCode">Bank code</label>
+    <input
+     id="recipientBankCode"
+     type="text"
+     name="recipientBankCode"
+     aria-describedby="bankCodeHint"
+     required="true"
+     aria-required="true" />
+    <span id="bankCodeHint">Please enter digits only.</span>
+   </p>
+
+   <p>
+    <label>Bank name</label>
+    <span>will be inserted automatically.</span>
+   </p>
+
+  </fieldset>
+
+  <fieldset>
+   <legend>Transfer Details</legend>
+   <p>
+    <label for="amount">Amount</label>
+    <input
+     id="amount"
+     type="text"
+     name="amount"
+     aria-describedby="amountHint"
+     required="true"
+     aria-required="true" />
+    <span id="amountHint">Amount in Euro.</span>
+   </p>
+
+   <p>
+    <label for="reasonLine1">Reason line 1</label>
+    <input
+     id="reasonLine1"
+     type="text"
+     name="reasonLine1" />
+   </p>
+
+   <p>
+    <label for="reasonLine2">Reason line 2</label>
+    <input
+     id="reasonLine2"
+     type="text"
+     name="reasonLine2" />
+   </p>
+
+   <p>
+    <label for="reasonLine3">Reason line 3</label>
+    <input
+     id="reasonLine3"
+     type="text"
+     name="reasonLine3" />
+   </p>
+
+   <p>
+    <label for="reasonLine4">Reason line 4</label>
+    <input
+     id="reasonLine4"
+     type="text"
+     name="reasonLine4" />
+   </p>
+
+  </fieldset>
+
+  <p>
+   <label for="fulfillmentDate">Fulfillment date</label>
+   <input
+    id="fulfillmentDate"
+    type="text"
+    name="fulfillmentDate"
+    aria-describedby="dateHint" />
+   <span id="dateHint">Please enter date in the format
+    YYYY.MM.DD. Leave empty if you wish immediate fulfillment.</span>
+  </p>
+
+  <p>
+   <label for="transferorAccount">Transferor Account</label>
+   <select
+    id="transferorAccount"
+    name="transferorAccount"
+    required="true"
+    aria-required="true">
+    <option>Account 4711</option>
+    <option>Account 08/15</option>
+   </select>
+  </p>
+
+  <input
+   type="submit"
+   value="Submit" />
+ </form>
+
+</body>
+</html>
