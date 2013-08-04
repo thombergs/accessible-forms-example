@@ -14,10 +14,15 @@ input,p span {
 <script
  type="text/javascript"
  src="js/jquery-2.0.3.js"></script>
+<script
+ type="text/javascript"
+ src="js/date.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		// This javascript adds various attributes to the input fields to make the form more accessible.
 		// Use this method if your server-side framework does not support these attributes.
+		$("#fulfillmentDate").attr("min", new Date().toString('yyyy-MM-dd'));
+		
 		$("#recipientName").attr("required", "true");
 		$("#recipientName").attr("aria-required", "true");
 
@@ -129,7 +134,7 @@ input,p span {
     id="fulfillmentDate"
     type="text"
     name="fulfillmentDate"/> <span id="dateHint">Please
-    enter date in the format YYYY.MM.DD. Leave empty if you wish
+    enter date in the format YYYY-MM-DD. Leave empty if you wish
     immediate fulfillment.</span>
   </p>
 
